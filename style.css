@@ -165,11 +165,8 @@ span{
     text-align: center;
     font-size: 4.5rem;
 }
-.about h1{
+.about-content h1{
      margin-bottom: 5rem;
-     display: flex;
-     align-items: center;
-     justify-content: center;
      text-align: center;
 }
 .about-content h2 {
