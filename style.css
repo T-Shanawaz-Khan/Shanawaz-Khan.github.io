@@ -489,7 +489,7 @@ span{
     }
 }
 
-.skills {
+about__content-skills .skills {
     display: flex;
     flex-wrap: wrap;
   }
