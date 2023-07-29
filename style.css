@@ -489,17 +489,17 @@ span{
     }
 }
 
-about__content-skills .skills {
+.about__content-skills .skills {
     display: flex;
     flex-wrap: wrap;
   }
   
-  .skills__skill:hover {
+  .skills .skills__skill:hover {
     transform: translateY(-3px);
     background-color: rgba(0, 0, 0, 0.15);
   }
   
-  .skills__skill {
+  .skills .skills__skill {
     padding: 1rem 2rem;
     margin-bottom: 1.5rem;
     margin-right: 1.5rem;
@@ -510,7 +510,7 @@ about__content-skills .skills {
     color: #777;
   
   }
-  .about__content-title {
+  .about__content-skills .about__content-title {
     font-weight: 700;
     font-size: 2.8rem;
     margin-bottom: 3rem;
