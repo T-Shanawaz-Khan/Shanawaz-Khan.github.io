@@ -488,3 +488,30 @@ span{
         margin-top: 2rem;
     }
 }
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .skills__skill:hover {
+    transform: translateY(-3px);
+    background-color: rgba(0, 0, 0, 0.15);
+  }
+  
+  .skills__skill {
+    padding: 1rem 2rem;
+    margin-bottom: 1.5rem;
+    margin-right: 1.5rem;
+    font-size: 1.6rem;
+    background: rgba(153, 153, 153, 0.2);
+    border-radius: 5px;
+    font-weight: 600;
+    color: #777;
+  
+  }
+  .about__content-title {
+    font-weight: 700;
+    font-size: 2.8rem;
+    margin-bottom: 3rem;
+  }
