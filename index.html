@@ -178,17 +178,17 @@
    <!--contact details-->
    <section class="contact" id="contact">
     <h2 class="heading">Contact <span>Me!</span></h2>
-    <form action="#">
+    <form method="post" name="google-sheet">
         <div class="input-box">
-            <input type="text" placeholder="Full Name">
-            <input type="email" placeholder="Email Address">
+            <input type="text" placeholder="Full Name" name="FullName">
+            <input type="email" placeholder="Email Address" name="Email">
         </div>
         <div class="input-box">
-            <input type="number" placeholder="Mobile Number">
-            <input type="text" placeholder="Email Subject">
+            <input type="number" placeholder="Mobile Number" name="Mobile">
+            <input type="text" placeholder="Email Subject" name="EmailSubject">
         </div>
-        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-        <input type="submit" value="Send Message" class="btn">
+        <textarea name="Message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+        <input type="submit" value="submit" name="submit" class="btn">
     </form>
    </section>
 
@@ -210,6 +210,24 @@
    <script src="https://unpkg.com/scrollreveal"></script>
 
    <script src="script.js"></script>
+
+        <!---form validation--->
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbxwh3cwFRn-uBBN-gdEQpYtRcnAs18ZNIxHAckDyPJITLGey-wuLajElK9-Mns6OuiX/exec'
+            const form = document.forms['google-sheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+
+
+=============================================================================
+
+
 
     </body>
 
